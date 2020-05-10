@@ -13,6 +13,14 @@
 		?>
 		<!--- End -->
 
+		<!-- Share -->
+		<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.js"></script>
+		<?php
+		$id=$_GET['id'];
+		$share="<button class=\"btn\" data-clipboard-text=\"http://victorwoo.synology.me:567/?type=view&id=$id\">  Share  </button>";
+		?>	
+		<!-- End -->
+
 		<!-- Prism.js -->
 		<link rel="stylesheet" href="prism.css" />
 		<script src="prism.js"></script>
@@ -86,6 +94,7 @@
 					echo "<br><br>
 					<center>
 					<input type=\"button\" onclick=\"javascrtpt:window.location.href='/'\" value=\" < Home \">
+					".$share."
 					<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=edit&id=$pid'\" value=\" > Edit \">
 					</center>
 					";
@@ -140,5 +149,8 @@
 				<br>
 			</div>
 		</div>
+		<script type="text/javascript">
+			new ClipboardJS('.btn');
+		</script>
 	</body>
 </html>
