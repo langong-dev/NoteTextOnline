@@ -13,6 +13,11 @@
 		?>
 		<!--- End -->
 
+		<!-- Prism.js -->
+		<link rel="stylesheet" href="prism.css" />
+		<script src="prism.js"></script>
+		<!-- End -->
+
 		<?php
 		$pid=trim($_GET['id']);
 		$type=trim($_GET['type']);
@@ -24,6 +29,8 @@
 		?>
 		<title><?php echo $tit;?></title>
 
+
+		<!-- Main styles -->
 		<style>
 		.pages{
 			width:90%;
@@ -34,7 +41,6 @@
 		.head{
 			width:90%;
 			margin: 0 auto;
-			/*left: 0px;*/
 			padding-left: 17px;
 		}
 		.pg2{
@@ -43,6 +49,7 @@
 			margin: 0 auto;
 		}
 		</style>
+		<!-- End -->
 
 		<?php
 		include "get.php";
