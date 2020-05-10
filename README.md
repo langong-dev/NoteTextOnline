@@ -1,5 +1,6 @@
 # NoteTextOnline
 
+![](https://img.shields.io/github/repo-size/langong-dev/NoteTextOnline?logo=github)
 ![](https://img.shields.io/github/tag/langong-dev/NoteTextOnline.svg)
 ![](https://img.shields.io/github/release/langong-dev/NoteTextOnline.svg)
 ![](https://img.shields.io/github/stars/langong-dev/NoteTextOnline.svg)
