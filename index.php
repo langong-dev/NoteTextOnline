@@ -97,7 +97,7 @@
 						<textarea name=\"val\" rows=\"20\" cols=\"80\">$edpg</textarea>
 						<br><br>
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=view&id=$pid'\" value=\" < Back \">
-						<input type=\"submit\" value=\" > Go \">
+						<input type=\"submit\" value=\" > Save \">
 						</form>
 						</center>
 						";
