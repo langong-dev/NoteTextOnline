@@ -52,7 +52,7 @@
 			padding-left: 17px;
 		}
 		.pg2{
-			background-color:#d3d3d2;
+			background-color:#eeeeee;
 			width:90%;
 			margin: 0 auto;
 		}
