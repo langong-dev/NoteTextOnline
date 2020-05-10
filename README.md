@@ -13,7 +13,7 @@ This is a note app online.
 
 You can write some note with your **team**.
 
-[ > Click to try it! ](http://victorwoo.synology.me:666/nto/)
+[ > Click to try it! ](http://victorwoo.synology.me:567/)
 
 ## Light
 
