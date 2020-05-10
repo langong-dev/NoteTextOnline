@@ -2,7 +2,8 @@
 echo "
 <title>NoteText | LanGongDEV</title>
 <div class=\"head\"><h1>LanGong NoteText Online</h1></div>
-<br>
+<hr width=\"92%\" >
+<br><br>
 <div class=\"pg2\">
 	<br>
 	<div class=\"pages\">

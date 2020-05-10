@@ -34,6 +34,8 @@
 		.head{
 			width:90%;
 			margin: 0 auto;
+			/*left: 0px;*/
+			padding-left: 17px;
 		}
 		.pg2{
 			background-color:#d3d3d2;
