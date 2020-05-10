@@ -22,3 +22,4 @@ You can write some note with your **team**.
 - You can write with your team
 - You can share it to everyone
 - You can edit it online
+- You can share **fastly**
