@@ -1,9 +1,9 @@
 # NoteTextOnline
 
-![](https://img.shields.io/github/tag/langong-dev/NoteText.svg)
-![](https://img.shields.io/github/release/langong-dev/NoteText.svg)
-![](https://img.shields.io/github/stars/langong-dev/NoteText.svg)
-![](https://img.shields.io/github/forks/langong-dev/NoteText.svg)
+![](https://img.shields.io/github/tag/langong-dev/NoteTextOnline.svg)
+![](https://img.shields.io/github/release/langong-dev/NoteTextOnline.svg)
+![](https://img.shields.io/github/stars/langong-dev/NoteTextOnline.svg)
+![](https://img.shields.io/github/forks/langong-dev/NoteTextOnline.svg)
 ![](https://img.shields.io/badge/state-Service-brightgreen.svg?style=plastic)
 ![](https://img.shields.io/badge/GitHub-LanGongNoteText-yellow.svg?style=social&logo=github)
 
