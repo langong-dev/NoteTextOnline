@@ -77,7 +77,6 @@
 		$page=markhtml($page);
 		?>
 
-		<?php 	echo "<link rel=\"stylesheet\" href=\"double_main.css\" type=\"text/css\" />"; ?>
 		
 	</head>
 	<body>
