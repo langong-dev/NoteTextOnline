@@ -17,7 +17,7 @@
 		<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.js"></script>
 		<?php
 		$id=$_GET['id'];
-		$share="<button class=\"btn\" data-clipboard-text=\"http://victorwoo.synology.me:567/?type=view&id=$id\">  Share  </button>";
+		$share="<button class=\"btn\" onclick=\"alert('Copied!')\" data-clipboard-text=\"http://victorwoo.synology.me:567/?type=view&id=$id\">  Share  </button>";
 		?>	
 		<!-- End -->
 
