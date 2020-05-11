@@ -41,8 +41,10 @@ echo "
 		</center>
 		</td></tr>
 		</table>
+		<br><br><br>
+		<a href=\"http://victorwoo.synology.me:567/?type=view&id=1\"> Need help? </a>
 		</center>
-		<br><br>
+		<br>
 	</div>
 	<br><br><br>
 	<div>
