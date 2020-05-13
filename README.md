@@ -27,3 +27,6 @@ You can write some note with your **team**.
 - You can use **Markdown**
 - You can use **KaTeX**
  
+## License
+
+- MIT LICENSE
