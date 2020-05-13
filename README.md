@@ -24,4 +24,6 @@ You can write some note with your **team**.
 - You can share it to everyone
 - You can edit it online
 - You can share **fastly**
+- You can use **Markdown**
+- You can use **KaTeX**
  
