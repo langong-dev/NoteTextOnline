@@ -98,10 +98,38 @@
 					</center>
 					";
 				}
+				else if(trim($type)=="checkin"){
+					$id=$_GET['id'];
+					$pd=$_POST['td'];
+					//include "get.php";
+					
+					if($fileio->getline("psd/".trim($id),"1")==trim($pd)){
+						//$_COOKIE['lg']=$id;
+						setcookie("lg",$id);
+						echo "<script>window.location.href=\"/?type=edit&id=".$id."\";</script>";
+						$miss = 0;
+					}
+					else{
+						echo "
+						<center>
+						<h2>Login</h2>
+						<br>Password Error<br>
+						<form action=\"?type=checkin&id=".$pid."\" method=\"post\">
+						<br>
+						<b>Password</b>  
+						<input type=\"password\" name=\"td\">
+						<br><br>
+						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/'\" value=\" < Home \">
+						<input type=\"submit\" value=\" Go \">
+						</form>
+						</center>
+						";
+					}
+				}
 				else if(trim($type)=="edit"){
 					if($_COOKIE['lg']!=$pid){
 						//echo $_COOKIE['lg'];
-						die("<script>window.location.href=\"/?type=login&id=".$pid."\";</script>");
+						echo "<script>window.location.href=\"/?type=login&id=".$pid."\";</script>";
 					}
 					else{
 						echo "
@@ -122,7 +150,7 @@
 					echo "
 					<center>
 					<h2>Login</h2>
-					<form action=\"signin.php?id=".$pid."\" method=\"post\">
+					<form action=\"?type=checkin&id=".$pid."\" method=\"post\">
 					<br>
 					<b>Password</b>  
 					<input type=\"password\" name=\"td\">
