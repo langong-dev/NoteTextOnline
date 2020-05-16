@@ -144,7 +144,7 @@
 						<h2>$title</h2>
 						<form action=\"update.php?id=".$pid."\" method=\"post\">
 						<br>
-						<textarea name=\"val\" rows=\"20\" cols=\"80\">$title\n\n$edpg</textarea>
+						<textarea name=\"val\" rows=\"20\" cols=\"80\">$title\n$edpg</textarea>
 						<br><br>The title of the note is on <B>line 1</B><br><br>
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=view&id=$pid'\" value=\" < Back \">
 						<input type=\"submit\" value=\" > Save \">

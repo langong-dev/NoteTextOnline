@@ -8,7 +8,7 @@ fclose($fn);
 
 $sc=$la+1;
 $fn=fopen("doc/".$sc.".md","w");
-fwrite($fn,"# Welcome to Use NoteText!\n\nYou can use **Markdown** and **KaTeX**.\n");
+fwrite($fn,"New Note\n\n# Welcome to Use NoteText!\n\nYou can use **Markdown** and **KaTeX**.\n");
 fclose($fn);
 
 $fn=fopen("psd/".$sc,"w");
