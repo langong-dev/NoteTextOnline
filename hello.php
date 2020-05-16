@@ -16,7 +16,7 @@ echo "
 		<form action=\"/creat.php\" method=\"post\">
 		<br>
 		<b>Password</b>  
-		<input type=\"text\" name=\"psd\">
+		<input type=\"text\" name=\"psd\" placeholder=\"No input means no setting\">
 		<br><br>
 		<input type=\"submit\" value=\" > Creat \">
 		</form>
