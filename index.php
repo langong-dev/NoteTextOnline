@@ -29,13 +29,10 @@
 		<?php
 		$pid=trim($_GET['id']);
 		$type=trim($_GET['type']);
-
-		if($type=="")$tit="NoteText";
-		else if($type=="view")$tit="View ".$pid." | NoteText";
-		else if($type=="edit")$tit="Edit ".$pid." | NoteText";
-		else $tit="Login | NoteText";
+		
+		
 		?>
-		<title><?php echo $tit;?></title>
+
 
 
 		<!-- Main styles -->
@@ -70,12 +67,22 @@
 
 		$page="";
 		$f=fopen("doc/".$pid.".md","r") or die("<script>window.location.href=\"/\";</script>");
+		$title=trim(fgets($f));
 		while(!feof($f)){
 			$page=$page.trim(fgets($f))."\n";
 		}
 		$edpg=$page;
 		$page=markhtml($page);
+		
+
+		if($type=="")$tit="NoteText";
+		else if($type=="view")$tit=$title." | NoteText";
+		else if($type=="edit")$tit=$title." | NoteText";
+		else $tit="Login | NoteText";
 		?>
+
+
+		<title><?php echo $tit;?></title>
 
 		
 	</head>
@@ -88,7 +95,7 @@
 			<div class="pages">
 				<?php
 				if(trim($type)=="view"){
-					echo "<h2>View Note <b>$pid</b></h2><br>";
+					echo "<h2>$title</h2><br>";
 					echo $page;
 					echo "<br><br>
 					<center>
@@ -134,14 +141,15 @@
 					else{
 						echo "
 						<center>
-						<h2>Edit Note <b>$pid</b></h2>
+						<h2>$title</h2>
 						<form action=\"update.php?id=".$pid."\" method=\"post\">
 						<br>
-						<textarea name=\"val\" rows=\"20\" cols=\"80\">$edpg</textarea>
-						<br><br>
+						<textarea name=\"val\" rows=\"20\" cols=\"80\">$title\n\n$edpg</textarea>
+						<br><br>The title of the note is on <B>line 1</B><br><br>
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=view&id=$pid'\" value=\" < Back \">
 						<input type=\"submit\" value=\" > Save \">
 						</form>
+						
 						</center>
 						";
 					}
