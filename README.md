@@ -30,3 +30,15 @@ You can write some note with your **team**.
 ## License
 
 - MIT LICENSE
+
+## Install Guide
+
+1. Download lastest version
+2. Put it into your server
+3. Creat a port or host for it
+
+## Update Guide
+
+1. Download lastest version
+2. Delete files, don't delete `doc/` and `psd/`
+3. Copy files into your server
