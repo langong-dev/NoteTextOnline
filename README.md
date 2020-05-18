@@ -33,6 +33,13 @@ You can write some note with your **team**.
 
 ## Install Guide
 
+### Something must be
+
+- PHP>=7.0
+- Nginx or Apache
+
+### Install
+
 1. Download lastest version
 2. Put it into your server
 3. Creat a port or host for it
