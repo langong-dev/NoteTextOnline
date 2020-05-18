@@ -109,8 +109,8 @@
 				$k=fgets($f);
 				$page=$page.$k;
 			}
-			$edpg=$page;
-			$page=markhtml($page);
+			$edpg=trim($page);
+			$page=trim(markhtml($page));
 			
 
 			if($type=="")$tit="NoteText";
