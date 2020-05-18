@@ -17,7 +17,7 @@
 		<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.js"></script>
 		<?php
 		$id=$_GET['id'];
-		$share="<button class=\"btn\" onclick=\"alert('Copied!\\nYou can copy to the browser to access!')\" data-clipboard-text=\"http://victorwoo.synology.me:567/?type=view&id=$id\">  Share  </button>";
+		//$share="<input type=\"button\" onclick=\"alert('Copied!\\nYou can copy to the browser to access!')\" data-clipboard-text=\"http://victorwoo.synology.me:567/?type=view&id=$id\" value=\"  Share  \">";
 		?>	
 		<!-- End -->
 
@@ -25,6 +25,7 @@
 		<link rel="stylesheet" href="prism.css" />
 		<script src="prism.js"></script>
 		<!-- End -->
+
 
 		<?php
 		$pid=trim($_GET['id']);
@@ -73,7 +74,7 @@
 			border-radius: 14px;
 			padding: 13px 14px;
 			width: 90%;
-			font-size: 16px;
+			font-size: 15px;
 		}
 		.input textarea{
 			outline-style: none ;
@@ -82,6 +83,7 @@
 			padding: 10px;
 			resize: none;
 			width: 91%;
+			font-size: 15px;
 		}
 		.b input{
 			outline-style: none ;
@@ -216,7 +218,7 @@
 						<br>
 						<input name=\"tit\" value=\"$title\" type=\"text\" placeholder=\"Title\"><br>
 						<br>
-						<textarea name=\"val\" rows=\"30\">$edpg</textarea>
+						<textarea id=\"text\" name=\"val\" rows=\"30\">$edpg</textarea>
 						</div>
 						<br><br>
 						<div class=\"b\">
