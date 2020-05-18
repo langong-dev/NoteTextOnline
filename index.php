@@ -53,6 +53,22 @@
 			width:90%;
 			margin: 0 auto;
 		}
+		.input input{
+			outline-style: none ;
+			border: 0;
+			border-radius: 3px;
+			padding: 13px 14px;
+			width: 90%;
+			font-size: 16px;
+		}
+		.input textarea{
+			outline-style: none ;
+			border:0;
+			border-radius:5px;
+			padding: 10px;
+			resize: none;
+			width: 91%;
+		}
 		</style>
 		<!-- End -->
 
@@ -143,12 +159,16 @@
 						echo "
 						<h2>Edit <tt>$title</tt></h2>
 						<center>
+						
 						<form action=\"update.php?id=".$pid."\" method=\"post\">
 						<br>
-						Title:  
-						<input name=\"tit\" value=\"$title\" type=\"text\"><br><br>
-						<textarea name=\"val\" rows=\"20\" cols=\"80\">$edpg</textarea>
-						<br><br>The title of the note is on <B>line 1</B><br><br>
+						<div class=\"input\">
+						<br>
+						<input name=\"tit\" value=\"$title\" type=\"text\"><br>
+						<br>
+						<textarea name=\"val\" rows=\"30\">$edpg</textarea>
+						</div>
+						<br><br>
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=view&id=$pid'\" value=\" < Back \">
 						$share
 						<input type=\"submit\" value=\" > Save \">
