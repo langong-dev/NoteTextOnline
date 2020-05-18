@@ -19,7 +19,9 @@ echo "
 		<input type=\"text\" name=\"psd\" placeholder=\"Set a password\">
 		</div>
 		<br><br>
+		<div class=\"b\">
 		<input type=\"submit\" value=\" > Creat \">
+		</div>
 		</form>
 		</center>
 		</td>
@@ -38,13 +40,17 @@ echo "
 		<input type=\"number\" name=\"sid\" placeholder=\"Input your note ID\">
 		</div>
 		<br><br>
+		<div class=\"b\">
 		<input type=\"submit\" value=\" > Go \">
+		</div>
 		</form>
 		</center>
 		</td></tr>
 		</table>
 		<br><br><br>
-		<a href=\"/?type=view&id=1\"> Need help? </a>
+		<div class=\"b\">
+		<input type=\"button\" value=\" Need help? \" onclick=\"window.location.href='/?type=view&id=1'\" >
+		</div>
 		</center>
 		<br>
 	</div>

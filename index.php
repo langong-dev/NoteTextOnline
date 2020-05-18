@@ -83,6 +83,20 @@
 			resize: none;
 			width: 91%;
 		}
+		.b input{
+			outline-style: none ;
+			border: 0;
+			border-radius: 14px;
+			padding: 13px 14px;
+			font-size: 16px;
+		}
+		.b button{
+			outline-style: none ;
+			border: 0;
+			border-radius: 14px;
+			padding: 13px 14px;
+			font-size: 16px;
+		}
 		</style>
 		<!-- End -->
 
@@ -147,9 +161,11 @@
 					echo $page;
 					echo "<br><br>
 					<center>
+					<div class=\"b\">
 					<input type=\"button\" onclick=\"javascrtpt:window.location.href='/'\" value=\" < Home \">
 					".$share."
 					<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=edit&id=$pid'\" value=\" > Edit \">
+					</div>
 					</center>
 					";
 				}
@@ -170,12 +186,15 @@
 						<h2>Login</h2>
 						<br>Password Error<br>
 						<form action=\"?type=checkin&id=".$pid."\" method=\"post\">
-						<br>
-						<b>Password</b>  
-						<input type=\"password\" name=\"td\">
 						<br><br>
+						<div class=\"input\"> 
+						<input type=\"password\" name=\"td\" placeholder=\"Password\">
+						</div>
+						<br><br>
+						<div class=\"b\">
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/'\" value=\" < Home \">
 						<input type=\"submit\" value=\" Go \">
+						</div>
 						</form>
 						</center>
 						";
@@ -200,11 +219,12 @@
 						<textarea name=\"val\" rows=\"30\">$edpg</textarea>
 						</div>
 						<br><br>
+						<div class=\"b\">
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=view&id=$pid'\" value=\" < Back \">
 						$share
 						<input type=\"submit\" value=\" > Save \">
+						</div>
 						</form>
-						
 						</center>
 						";
 					}
@@ -214,12 +234,15 @@
 					<center>
 					<h2>Login</h2>
 					<form action=\"?type=checkin&id=".$pid."\" method=\"post\">
-					<br>
-					<b>Password</b>  
-					<input type=\"password\" name=\"td\">
 					<br><br>
+					<div class=\"input\"> 
+					<input type=\"password\" name=\"td\" placeholder=\"Password\">
+					</div>
+					<br><br>
+					<div class=\"b\">
 					<input type=\"button\" onclick=\"javascrtpt:window.location.href='/'\" value=\" < Home \">
 					<input type=\"submit\" value=\" Go \">
+					</div>
 					</form>
 					</center>
 					";
