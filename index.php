@@ -56,7 +56,7 @@
 		.input input{
 			outline-style: none ;
 			border: 0;
-			border-radius: 3px;
+			border-radius: 14px;
 			padding: 13px 14px;
 			width: 90%;
 			font-size: 16px;
@@ -64,7 +64,7 @@
 		.input textarea{
 			outline-style: none ;
 			border:0;
-			border-radius:5px;
+			border-radius: 22px;
 			padding: 10px;
 			resize: none;
 			width: 91%;
