@@ -69,7 +69,8 @@
 		$f=fopen("doc/".$pid.".md","r") or die("<script>window.location.href=\"/\";</script>");
 		$title=trim(fgets($f));
 		while(!feof($f)){
-			$page=$page.trim(fgets($f))."\n";
+			$k=fgets($f);
+			$page=$page.$k;
 		}
 		$edpg=$page;
 		$page=markhtml($page);
