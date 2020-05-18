@@ -15,8 +15,9 @@ echo "
 		<br>
 		<form action=\"/creat.php\" method=\"post\">
 		<br>
-		<b>Password</b>  
-		<input type=\"text\" name=\"psd\" placeholder=\"No input means no setting\">
+		<div class=\"input\">
+		<input type=\"text\" name=\"psd\" placeholder=\"Set a password\">
+		</div>
 		<br><br>
 		<input type=\"submit\" value=\" > Creat \">
 		</form>
@@ -33,8 +34,9 @@ echo "
 		<br>
 		<form action=\"/jump.php\" method=\"post\">
 		<br>
-		<b>ID</b>  
-		<input type=\"number\" name=\"sid\">
+		<div class=\"input\">
+		<input type=\"number\" name=\"sid\" placeholder=\"Input your note ID\">
+		</div>
 		<br><br>
 		<input type=\"submit\" value=\" > Go \">
 		</form>
