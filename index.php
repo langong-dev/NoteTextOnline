@@ -33,7 +33,21 @@
 		
 		?>
 
+		<!-- We chat mod -->
+		<?php
 
+			function is_weixin(){ 
+				if ( strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false ) 
+				{
+					return true;
+				}  
+				return false;
+			}
+				
+
+		?>
+
+		<!-- End -->
 
 		<!-- Main styles -->
 		<style>
@@ -75,27 +89,39 @@
 		<?php
 		include "get.php";
 		
+		
+
 		$pid=str_replace(".php","",$pid);
-		if(trim($pid)=="" || trim($type)==""){
+		// if(is_weixin()){
+		// 	include "weixin.php";
+		// 	die("</head>\n</html>");
+		// }
+		if((trim($pid)=="" || trim($type)=="") && !is_weixin()){
 			include "hello.php";
 			die("");
 		}
-
-		$page="";
-		$f=fopen("doc/".$pid.".md","r") or die("<script>window.location.href=\"/\";</script>");
-		$title=trim(fgets($f));
-		while(!feof($f)){
-			$k=fgets($f);
-			$page=$page.$k;
-		}
-		$edpg=$page;
-		$page=markhtml($page);
 		
+		if(!is_weixin()){
+			$page="";
+			$f=fopen("doc/".$pid.".md","r") or die("<script>window.location.href=\"/\";</script>");
+			$title=trim(fgets($f));
+			while(!feof($f)){
+				$k=fgets($f);
+				$page=$page.$k;
+			}
+			$edpg=$page;
+			$page=markhtml($page);
+			
 
-		if($type=="")$tit="NoteText";
-		else if($type=="view")$tit=$title." | NoteText";
-		else if($type=="edit")$tit=$title." | NoteText";
-		else $tit="Login | NoteText";
+			if($type=="")$tit="NoteText";
+			else if($type=="view")$tit=$title." | NoteText";
+			else if($type=="edit")$tit=$title." | NoteText";
+			else $tit="Login | NoteText";
+		}
+		else{
+
+			$tit="NoteText";
+		}
 		?>
 
 
@@ -111,6 +137,11 @@
 			<br>
 			<div class="pages">
 				<?php
+				if(is_weixin()){
+					include "weixin.php";
+					//die("</head>\n</html>");
+				}
+
 				if(trim($type)=="view"){
 					echo "<h2>$title</h2><br>";
 					echo $page;
