@@ -140,13 +140,16 @@
 					}
 					else{
 						echo "
+						<h2>Edit <tt>$title</tt></h2>
 						<center>
-						<h2>$title</h2>
 						<form action=\"update.php?id=".$pid."\" method=\"post\">
 						<br>
-						<textarea name=\"val\" rows=\"20\" cols=\"80\">$title\n$edpg</textarea>
+						Title:  
+						<input name=\"tit\" value=\"$title\" type=\"text\"><br><br>
+						<textarea name=\"val\" rows=\"20\" cols=\"80\">$edpg</textarea>
 						<br><br>The title of the note is on <B>line 1</B><br><br>
 						<input type=\"button\" onclick=\"javascrtpt:window.location.href='/?type=view&id=$pid'\" value=\" < Back \">
+						$share
 						<input type=\"submit\" value=\" > Save \">
 						</form>
 						
