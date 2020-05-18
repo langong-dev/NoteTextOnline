@@ -195,7 +195,7 @@
 						<br>
 						<div class=\"input\">
 						<br>
-						<input name=\"tit\" value=\"$title\" type=\"text\"><br>
+						<input name=\"tit\" value=\"$title\" type=\"text\" placeholder=\"Title\"><br>
 						<br>
 						<textarea name=\"val\" rows=\"30\">$edpg</textarea>
 						</div>
