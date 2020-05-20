@@ -30,6 +30,7 @@
 		<?php
 		$pid=trim($_GET['id']);
 		$type=trim($_GET['type']);
+		$error=trim($_GET['error']);
 		
 		
 		?>

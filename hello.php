@@ -1,4 +1,12 @@
 <?php
+
+$errlang=array(
+	"",
+	"Note Not Found",
+
+	""
+);
+
 echo "
 <title>NoteText | LanGongDEV</title>
 <div class=\"head\"><h1>LanGong NoteText Online</h1></div>
@@ -33,11 +41,18 @@ echo "
 		<td>
 		<center>
 		<h2>View and Edit</h2>
-		<br>
+		
 		<form action=\"/jump.php\" method=\"post\">
-		<br>
+		<br><br>
 		<div class=\"input\">
-		<input type=\"number\" name=\"sid\" placeholder=\"Input your note ID\">
+		<input type=\"number\" name=\"sid\" placeholder=\"";
+
+if($error == "")
+	echo "Input your note ID";
+if($error == 1)
+	echo $errlang[1];
+
+echo "\">
 		</div>
 		<br><br>
 		<div class=\"b\">
