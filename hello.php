@@ -55,16 +55,9 @@ echo "
 		<br>
 	</div>
 	<br><br><br>
-	<div>
-		<center>
-		<hr width=\"90%\">
-		<br><br>
-		Made by <b>LanGongINC &bull; LanGongDEV &bull; LanGongOnline</b>
-		<br>
-		&copy; 2020 LanGongINC
-		</center>
-		<br>
-	</div>
+";
+include "foot.php";
+echo"
 </div>
 ";
 ?>
