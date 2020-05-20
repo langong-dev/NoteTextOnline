@@ -99,6 +99,23 @@
 			padding: 13px 14px;
 			font-size: 16px;
 		}
+		.usrimg{}
+		.usrimg a{
+			text-decoration: none;
+			color: black;
+		}
+		.usrimg a:visited{
+			text-decoration: none;
+			color: black;
+		}
+		.usrimg a:hover {
+			text-decoration: none;
+			color:black;
+			}
+		.usrimg a:active{
+			text-decoration:none;
+			color:black;
+		}
 		</style>
 		<!-- End -->
 
@@ -253,16 +270,7 @@
 			</div>
 			<br>
 			<br><br>
-			<div>
-				<center>
-				<hr width="90%">
-				<br><br>
-				Made by <b>LanGongINC &bull; LanGongDEV &bull; LanGongOnline</b>
-				<br>
-				&copy; 2020 LanGongINC
-				</center>
-				<br>
-			</div>
+			<?php 	include "foot.php"; ?>
 		</div>
 		<script type="text/javascript">
 			new ClipboardJS('.btn');
