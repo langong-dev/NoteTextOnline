@@ -88,14 +88,14 @@
 		}
 		.b input{
 			outline-style: none ;
-			border: 0;
+			border: 1;
 			border-radius: 14px;
 			padding: 13px 14px;
 			font-size: 16px;
 		}
 		.b button{
 			outline-style: none ;
-			border: 0;
+			border: 1;
 			border-radius: 14px;
 			padding: 13px 14px;
 			font-size: 16px;
