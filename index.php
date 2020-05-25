@@ -100,7 +100,6 @@
 			padding: 13px 14px;
 			font-size: 16px;
 		}
-		.usrimg{}
 		.usrimg a{
 			text-decoration: none;
 			color: black;
