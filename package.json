@@ -1,0 +1,22 @@
+{
+  "name": "notetextonline",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/github/repo-size/langong-dev/NoteTextOnline?logo=github) ![](https://img.shields.io/github/release-date/langong-dev/NoteTextOnline?color=blue) ![](https://img.shields.io/github/tag/langong-dev/NoteTextOnline.svg) ![](https://img.shields.io/github/release/langong-dev/NoteTextOnline.svg) ![](https://img.shields.io/github/stars/langong-dev/NoteTextOnline.svg) ![](https://img.shields.io/github/forks/langong-dev/NoteTextOnline.svg) ![](https://img.shields.io/badge/state-Service-brightgreen.svg?style=plastic) ![](https://img.shields.io/badge/GitHub-LanGongNoteText-yellow.svg?style=social&logo=github)",
+  "main": "prism.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langong-dev/NoteTextOnline.git"
+  },
+  "author": "langong-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langong-dev/NoteTextOnline/issues"
+  },
+  "homepage": "https://github.com/langong-dev/NoteTextOnline#readme"
+}
